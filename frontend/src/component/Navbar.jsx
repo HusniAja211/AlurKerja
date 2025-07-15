@@ -15,12 +15,33 @@ function Navbar() {
         <div className="navbar-links flex items-center space-x-4 mr-3">
           <ul className="flex space-x-4">
             <li>
-              <button className="text-white hover:text-blue-300 btn-masuk">
+              <button
+                className="text-white hover:text-blue-300 btn-masuk"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(90deg, #3164ff 0%, #1d3c99 100%)",
+                  color: "white",
+                  padding: "0.50rem 1.5rem",
+                  borderRadius: "2rem",
+                  fontWeight: 600,
+                  transition: "opacity 0.3s ease",
+                }}
+              >
                 Masuk
               </button>
             </li>
             <li>
-              <button className="text-white hover:text-blue-300 btn-daftar">
+              <button
+                className="text-white hover:text-blue-300 btn-daftar"
+                style={{
+                  backgroundColor: "#f0f0f0",
+                  color: "#3164ff",
+                  border: "1px solid #3164ff",
+                  padding: "0.50rem 1.5rem",
+                  borderRadius: "2rem",
+                  transition: "opacity 0.3s ease",
+                }}
+              >
                 Daftar
               </button>
             </li>
