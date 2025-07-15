@@ -1,33 +1,24 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import Navbar from "./component/navbar";
+import Hero from "./assets/Hero.png";
+import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Navbar />
+      <div className="app-content flex rounded-4xl gap-48">
+        <div className="hero-section flex flex-col items-center justify-center">
+          <h1>Kelola Tugas Lebih Fokus & Terstruktur</h1>
+          <p>Kelola tugas, tim, dan jadwal kerja Anda dalam satu platform yang ringan, cepat, dan fleksibel.</p>
+          <button className="btn-cta">Mulai Sekarang</button>
+        </div>
+        <div className="hero-image flex items-center justify-center mt-36">
+          <img src={Hero} className="w-96 h-96" alt="Hero" />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="text-4xl text-amber-300">
-        Click on the Vite and React logos to learn more
-      </p>
+      <footer className="footer text-center p-4 bg-blue-800 text-white mt-80">
+        <p>&copy; 2023 KerjaWoi. All rights reserved.</p>
+      </footer>
     </>
   );
 }
