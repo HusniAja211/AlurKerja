@@ -2,6 +2,7 @@ import { useState } from "react";
 import logoWeb from "./../assets/Logo.png";
 import "../output.css";
 import "../index.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -15,20 +16,22 @@ function Navbar() {
         <div className="navbar-links flex items-center space-x-4 mr-3">
           <ul className="flex space-x-4">
             <li>
-              <button
-                className="text-white hover:text-blue-300 btn-masuk"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, #3164ff 0%, #1d3c99 100%)",
-                  color: "white",
-                  padding: "0.50rem 1.5rem",
-                  borderRadius: "2rem",
-                  fontWeight: 600,
-                  transition: "opacity 0.3s ease",
-                }}
-              >
-                Masuk
-              </button>
+              <Link to="/login">
+                <button
+                  className="text-white hover:text-blue-300 btn-masuk"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(90deg, #3164ff 0%, #1d3c99 100%)",
+                    color: "white",
+                    padding: "0.50rem 1.5rem",
+                    borderRadius: "2rem",
+                    fontWeight: 600,
+                    transition: "opacity 0.3s ease",
+                  }}
+                >
+                  Masuk
+                </button>
+              </Link>
             </li>
             <li>
               <button
