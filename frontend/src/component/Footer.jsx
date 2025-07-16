@@ -15,15 +15,19 @@ function Footer() {
         <h3 className="footer-title text-2xl font-bold">Tim Kami</h3>
         <ul className="footer-links">
           <li>
-            <p className="footer-link cursor-pointer">Yola Wardani - UI/UX Designer</p>
+            <a href="https://www.linkedin.com/in/yola-wardani-123456789/" target="_blank" rel="noopener noreferrer">
+              <p className="footer-link cursor-pointer">Yola Wardani - UI/UX Designer</p>
+            </a>
           </li>
           <li>
-            <p className="footer-link cursor-pointer">
+            <a href="https://www.instagram.com/satriafarel30/" target="_blank" rel="noopener noreferrer" className="footer-link cursor-pointer">
               Satria Farel Cipta Permata - Frontend Developer
-            </p>
+            </a>
           </li>
           <li>
-            <p className="footer-link cursor-pointer">Husni Mubarak - Backend Developer</p>
+            <a href="https://www.linkedin.com/in/husni-mubarak-123456789/" target="_blank" rel="noopener noreferrer" className="footer-link cursor-pointer">
+              Husni Mubarak - Backend Developer
+            </a>
           </li>
         </ul>
       </div>
