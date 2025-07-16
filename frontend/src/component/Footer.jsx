@@ -4,7 +4,7 @@ import "../output.css";
 function Footer() {
   return (
     <footer
-      className="footer py-5"
+      className="footer py-5 w-full"
       style={{
         backgroundImage: "linear-gradient(to bottom, #3164ff 0%, #1d3c99 100%)",
       }}
