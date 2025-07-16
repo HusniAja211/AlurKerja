@@ -4,7 +4,7 @@ import "../output.css";
 function Footer() {
   return (
     <footer
-      className="footer"
+      className="footer py-5"
       style={{
         backgroundImage: "linear-gradient(to bottom, #3164ff 0%, #1d3c99 100%)",
       }}
@@ -15,7 +15,7 @@ function Footer() {
         <h3 className="footer-title text-2xl font-bold">Tim Kami</h3>
         <ul className="footer-links">
           <li>
-            <a href="https://www.linkedin.com/in/yola-wardani-123456789/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/yolawardani_/" target="_blank" rel="noopener noreferrer">
               <p className="footer-link cursor-pointer">Yola Wardani - UI/UX Designer</p>
             </a>
           </li>
@@ -25,7 +25,7 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/husni-mubarak-123456789/" target="_blank" rel="noopener noreferrer" className="footer-link cursor-pointer">
+            <a href="https://www.instagram.com/husniaja211/" target="_blank" rel="noopener noreferrer" className="footer-link cursor-pointer">
               Husni Mubarak - Backend Developer
             </a>
           </li>
