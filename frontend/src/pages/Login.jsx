@@ -121,8 +121,8 @@ function Login() {
                     Daftar
                   </Link>
                 </p>
-                <div className="flex text-center flex-col justify-center my-2">
-                  <p className="text-center">atau</p>
+                <div className="flex flex-col my-2" style={{ width: "100%" }}>
+                  <p className="divider divider-primary">atau</p>
                 </div>
                 <button
                   className="flex justify-center items-center gap-2 text-white hover:text-blue-300 btn-daftar text-center mx-auto"
