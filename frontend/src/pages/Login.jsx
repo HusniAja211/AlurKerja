@@ -27,14 +27,32 @@ function Login() {
                 >
                   Email
                 </label>
-                <input
-                  className="border border-gray-300 p-2 rounded"
-                  type="email"
-                  id="email"
-                  style={{ width: "100%" }}
-                  required
-                />
+                <div className="input input-bordered border-slate-300 bg-white flex items-center gap-2 w-full">
+                  <input
+                    type="email"
+                    placeholder="Masukan email Anda..."
+                    id="email"
+                    className="grow bg-white"
+                    required
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-gray-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14
+               a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
               </div>
+
               <div className="mb-4">
                 <label
                   className="block text-sm font-medium mb-2"
@@ -42,14 +60,34 @@ function Login() {
                 >
                   Password
                 </label>
-                <input
-                  className="border border-gray-300 p-2 w-full rounded"
-                  type="password"
-                  id="password"
-                  style={{ width: "100%" }}
-                  required
-                />
+                <div className="input input-bordered border-slate-300 bg-white flex items-center gap-2 w-full">
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Masukan password Anda..."
+                    className="grow"
+                    required
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-gray-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 11c1.657 0 3-1.343 3-3V7a3 3 0 10-6 0v1
+               c0 1.657 1.343 3 3 3zm0 0v4m0 4h.01M5 11h14
+               a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6
+               a2 2 0 012-2z"
+                    />
+                  </svg>
+                </div>
               </div>
+
               <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center">
                   <input type="checkbox" id="remember" className="mr-2" />
