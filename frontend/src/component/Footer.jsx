@@ -3,36 +3,50 @@ import "../output.css";
 
 function Footer() {
   return (
-    <footer
-      className="footer py-5 w-full"
-      style={{
-        backgroundImage: "linear-gradient(to bottom, #3164ff 0%, #1d3c99 100%)",
-      }}
-    >
-      <img src={logoWeb} alt="Logo" className="footer-logo w-44 ml-10" />
-      <hr className="footer-divider my-5" style={{ borderColor: "#081A50" }} />
-      <div className="footer-links-container text-left text-white ml-10">
-        <h3 className="footer-title text-2xl font-bold">Tim Kami</h3>
-        <ul className="footer-links">
+    <footer className="w-full flex flex-col bg-gradient-to-b from-blue-600 to-blue-800 text-white">
+      <img src={logoWeb} alt="Logo" className="w-44 ml-10 pt-5" />
+
+      {/* Garis pemisah tipis */}
+      <hr className="my-4 border-t border-white/50 w-full" />
+
+      <div className="ml-10 mb-4">
+        <h3 className="text-2xl font-bold mb-2">Tim Kami</h3>
+        <ul className="space-y-1">
           <li>
-            <a href="https://www.instagram.com/yolawardani_/" target="_blank" rel="noopener noreferrer">
-              <p className="footer-link cursor-pointer">Yola Wardani - UI/UX Designer</p>
+            <a
+              href="https://www.instagram.com/yolawardani_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Yola Wardani - UI/UX Designer
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/satriafarel30/" target="_blank" rel="noopener noreferrer" className="footer-link cursor-pointer">
+            <a
+              href="https://www.instagram.com/satriafarel30/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Satria Farel Cipta Permata - Frontend Developer
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/husniaja211/" target="_blank" rel="noopener noreferrer" className="footer-link cursor-pointer">
+            <a
+              href="https://www.instagram.com/husniaja211/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Husni Mubarak - Backend Developer
             </a>
           </li>
         </ul>
       </div>
-      <hr className="footer-divider my-5" style={{ borderColor: "#081A50" }} />
-      <p className="footer-text text-center" style={{ padding: "1rem", paddingTop: "0" }}>
+
+      {/* Garis pemisah tipis kedua */}
+      <hr className="border-t border-white/50 w-full" />
+
+      {/* Hak cipta di tengah */}
+      <p className="text-center py-4">
         Hak Cipta © 2025 AlurKerja. Semua Hak Dilindungi.
       </p>
     </footer>

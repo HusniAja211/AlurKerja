@@ -10,12 +10,18 @@ function Register() {
         className="flex flex-col items-center justify-center text-black h-screen bg-gradient-to-r from-blue-500 to-blue-800"
         style={{ width: "100%" }}
       >
-        <div className="bg-white flex p-10 rounded-3xl shadow-md w-1/3">
+        <div className="bg-white flex p-10 rounded-3xl shadow-md w-5/12">
           <div className="flex flex-col w-full">
             <img src={logoWeb} alt="Logo" className="mb-4 w-32" />
             <h2
               className="font-bold my-5 text-center"
-              style={{ fontSize: "2rem" }}
+              style={{
+                fontSize: "2rem",
+                backgroundImage:
+                  "linear-gradient(0deg, #3164ff 0%, #1d3c99 100%)",
+                backgroundClip: "text",
+                color: "transparent",
+              }}
             >
               Buat Akun Baru
             </h2>
@@ -89,20 +95,23 @@ function Register() {
               </div>
 
               <div className="flex justify-center flex-col items-center">
-                <button
-                  className="text-white hover:text-blue-300 btn-masuk text-center"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(90deg, #3164ff 0%, #1d3c99 100%)",
-                    color: "white",
-                    padding: "0.50rem 2rem",
-                    borderRadius: "2rem",
-                    fontWeight: 600,
-                    transition: "opacity 0.3s ease",
-                  }}
-                >
-                  Daftar
-                </button>
+                <Link to="/verify-email">
+                  <button
+                    className="text-white hover:text-blue-300 btn-masuk text-center"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(90deg, #3164ff 0%, #1d3c99 100%)",
+                      color: "white",
+                      padding: "0.50rem 2rem",
+                      borderRadius: "2rem",
+                      fontWeight: 600,
+                      transition: "opacity 0.3s ease",
+                    }}
+                  >
+                    Daftar
+                  </button>
+                </Link>
+
                 <p className="text-center mt-2">
                   Sudah punya akun?{" "}
                   <Link to="/login" className="text-blue-900">
@@ -134,4 +143,187 @@ function Register() {
   );
 }
 
-export default Register;
+function VerifyEmail() {
+  return (
+    <>
+      <div
+        className="flex flex-col items-center justify-center text-black h-screen bg-gradient-to-r from-blue-500 to-blue-800"
+        style={{ width: "100%" }}
+      >
+        <div className="bg-white flex p-10 rounded-3xl shadow-md w-5/12">
+          <div className="flex flex-col w-full">
+            <img src={logoWeb} alt="Logo" className="mb-4 w-32" />
+            <h2
+              className="font-bold my-5 text-center"
+              style={{
+                fontSize: "2rem",
+                backgroundImage:
+                  "linear-gradient(0deg, #3164ff 0%, #1d3c99 100%)",
+                backgroundClip: "text",
+                color: "transparent",
+              }}
+            >
+              Verifikasi Email
+            </h2>
+            <p className="text-center my-4">
+              Kami telah mengirimkan 4-digit kode ke [email pengguna]. Silakan
+              masukkan kode tersebut untuk melanjutkan.
+            </p>
+            <form>
+              <div className="mb-4">
+                <div class="flex items-center justify-center gap-3">
+                  <input
+                    type="text"
+                    class="w-14 h-14 text-center text-2xl font-extrabold bg-slate-100 border rounded p-4 outline-none focus:bg-white focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
+                    maxlength="1"
+                    inputmode="numeric"
+                    pattern="\d*"
+                  />
+                  <input
+                    type="text"
+                    class="w-14 h-14 text-center text-2xl font-extrabold bg-slate-100 border rounded p-4 outline-none focus:bg-white focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
+                    maxlength="1"
+                    inputmode="numeric"
+                    pattern="\d*"
+                  />
+                  <input
+                    type="text"
+                    class="w-14 h-14 text-center text-2xl font-extrabold bg-slate-100 border rounded p-4 outline-none focus:bg-white focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
+                    maxlength="1"
+                    inputmode="numeric"
+                    pattern="\d*"
+                  />
+                  <input
+                    type="text"
+                    class="w-14 h-14 text-center text-2xl font-extrabold bg-slate-100 border rounded p-4 outline-none focus:bg-white focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
+                    maxlength="1"
+                    inputmode="numeric"
+                    pattern="\d*"
+                  />
+                </div>
+              </div>
+
+              <div className="flex justify-center flex-col items-center">
+                <button
+                  className="text-white hover:text-blue-300 btn-masuk text-center"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(90deg, #3164ff 0%, #1d3c99 100%)",
+                    color: "white",
+                    padding: "0.50rem 2rem",
+                    borderRadius: "2rem",
+                    fontWeight: 600,
+                    transition: "opacity 0.3s ease",
+                  }}
+                >
+                  Verifikasi Email
+                </button>
+                <div
+                  className="flex justify-between items-center my-5"
+                  style={{ width: "100%" }}
+                >
+                  <p>
+                    Kirim ulang kode <span className="text-blue-900">1:30</span>
+                  </p>
+                  <p>
+                    Ubah email?{" "}
+                    <Link to="/register" className="text-blue-900">
+                      Klik disini
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function BuatKataSandi() {
+  return (
+    <>
+      <div
+        className="flex flex-col items-center justify-center text-black h-screen bg-gradient-to-r from-blue-500 to-blue-800"
+        style={{ width: "100%" }}
+      >
+        <div className="bg-white flex p-10 rounded-3xl shadow-md w-5/12">
+          <div className="flex flex-col w-full">
+            <img src={logoWeb} alt="Logo" className="mb-4 w-32" />
+            <h2
+              className="font-bold my-5 text-center"
+              style={{
+                fontSize: "2rem",
+                backgroundImage:
+                  "linear-gradient(0deg, #3164ff 0%, #1d3c99 100%)",
+                backgroundClip: "text",
+                color: "transparent",
+              }}
+            >
+              Buat Kata Sandi
+            </h2>
+            <form>
+              <div className="mb-4">
+                <label
+                  className="block text-sm font-medium mb-2"
+                  htmlFor="email"
+                >
+                  Kata Sandi
+                </label>
+                <div className="input input-bordered border-slate-300 bg-white flex items-center gap-2 w-full">
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Masukan password Anda..."
+                    className="grow"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="mb-4">
+                <label
+                  className="block text-sm font-medium mb-2"
+                  htmlFor="password"
+                >
+                  Konfirmasi Kata Sandi
+                </label>
+                <div className="input input-bordered border-slate-300 bg-white flex items-center gap-2 w-full">
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Masukan password Anda..."
+                    className="grow"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="flex justify-center flex-col items-center">
+                <Link to="/verify-email">
+                  <button
+                    className="text-white hover:text-blue-300 btn-masuk text-center"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(90deg, #3164ff 0%, #1d3c99 100%)",
+                      color: "white",
+                      padding: "0.50rem 2rem",
+                      borderRadius: "2rem",
+                      fontWeight: 600,
+                      transition: "opacity 0.3s ease",
+                    }}
+                  >
+                    Mulai
+                  </button>
+                </Link>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export { Register, VerifyEmail, BuatKataSandi };

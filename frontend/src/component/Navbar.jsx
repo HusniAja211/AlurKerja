@@ -34,19 +34,21 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <button
-                className="text-white hover:text-blue-300 btn-daftar"
-                style={{
-                  backgroundColor: "#f0f0f0",
-                  color: "#3164ff",
-                  border: "1px solid #3164ff",
-                  padding: "0.50rem 1.5rem",
-                  borderRadius: "2rem",
-                  transition: "opacity 0.3s ease",
-                }}
-              >
-                Daftar
-              </button>
+              <Link to="/register">
+                <button
+                  className="text-white hover:text-blue-300 btn-daftar"
+                  style={{
+                    backgroundColor: "#f0f0f0",
+                    color: "#3164ff",
+                    border: "1px solid #3164ff",
+                    padding: "0.50rem 1.5rem",
+                    borderRadius: "2rem",
+                    transition: "opacity 0.3s ease",
+                  }}
+                >
+                  Daftar
+                </button>
+              </Link>
             </li>
           </ul>
         </div>

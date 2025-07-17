@@ -10,12 +10,18 @@ function Login() {
         className="flex flex-col items-center justify-center text-black h-screen bg-gradient-to-r from-blue-500 to-blue-800"
         style={{ width: "100%" }}
       >
-        <div className="bg-white flex p-10 rounded-3xl shadow-md w-1/3">
+        <div className="bg-white flex p-10 rounded-3xl shadow-md w-5/12">
           <div className="flex flex-col w-full">
             <img src={logoWeb} alt="Logo" className="mb-4 w-32" />
             <h2
               className="font-bold my-5 text-center"
-              style={{ fontSize: "2rem" }}
+              style={{
+                fontSize: "2rem",
+                backgroundImage:
+                  "linear-gradient(0deg, #3164ff 0%, #1d3c99 100%)",
+                backgroundClip: "text",
+                color: "transparent",
+              }}
             >
               Masuk Akun Anda
             </h2>
