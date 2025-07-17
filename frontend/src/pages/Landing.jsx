@@ -6,7 +6,7 @@ import Section1 from "./../assets/section1.png";
 import { Link } from "react-router-dom";
 import "./../index.css";
 
-function App() {
+function Landing() {
   return (
     <>
       <Navbar />
@@ -159,4 +159,4 @@ function App() {
   );
 }
 
-export default App;
+export default Landing;
