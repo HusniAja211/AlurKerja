@@ -1,10 +1,14 @@
+// import komponen yang diperlukan
 import { Routes, Route } from "react-router-dom";
+// import page yang sudah dibuat
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import {Register, VerifyEmail, BuatKataSandi } from "./pages/Register";
 
+// Komponen utama aplikasi
 export default function App() {
   return (
+    // membuat route
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/login" element={<Login />} />

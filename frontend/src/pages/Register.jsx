@@ -1,8 +1,10 @@
+// mengimpor komponen yang diperlukan
 import { Link } from "react-router-dom";
 import "./../index.css";
 import { FcGoogle } from "react-icons/fc";
 import logoWeb from "./../assets/Logo.png";
 
+// Halaman Register
 function Register() {
   return (
     <>
@@ -143,6 +145,7 @@ function Register() {
   );
 }
 
+// Halaman untuk verifikasi email
 function VerifyEmail() {
   return (
     <>
@@ -241,6 +244,7 @@ function VerifyEmail() {
   );
 }
 
+// Halaman untuk membuat kata sandi
 function BuatKataSandi() {
   return (
     <>
@@ -326,4 +330,5 @@ function BuatKataSandi() {
   );
 }
 
+// Ekspor komponen untuk digunakan di file lain
 export { Register, VerifyEmail, BuatKataSandi };

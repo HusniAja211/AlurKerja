@@ -1,11 +1,14 @@
+// mengimpor komponen yang diperlukan
 import { Link } from "react-router-dom";
 import "./../index.css";
 import { FcGoogle } from "react-icons/fc";
 import logoWeb from "./../assets/Logo.png";
 
+// Halaman Login
 function Login() {
   return (
     <>
+      {/* Bagian utama konten halaman */}
       <div
         className="flex flex-col items-center justify-center text-black h-screen bg-gradient-to-r from-blue-500 to-blue-800"
         style={{ width: "100%" }}
@@ -152,4 +155,5 @@ function Login() {
   );
 }
 
+// Ekspor komponen untuk digunakan di file lain
 export default Login;

@@ -1,3 +1,4 @@
+// mengimpor komponen yang diperlukan
 import Navbar from "./../component/Navbar";
 import Footer from "./../component/Footer";
 import Hero from "./../assets/Hero.png";
@@ -9,7 +10,9 @@ import "./../index.css";
 function Landing() {
   return (
     <>
+      {/* Menggunakan Navbar dan Footer */}
       <Navbar />
+      {/* Bagian utama konten halaman */}
       <div
         className="app-content flex flex-wrap align-items-center justify-center rounded-4xl gap-48"
         style={{
@@ -117,6 +120,18 @@ function Landing() {
           </div>
         </div>
       </section>
+      <section className="features-header flex items-center justify-center my-5 text-black" style={{ width: "100%" }}>
+        <div
+          className="flex justify-center items-center rounded-4xl"
+          style={{
+            width: "100%",
+            backgroundImage: "linear-gradient(90deg, #3164ff 0%, #1d3c99 100%)",
+          }}
+        >
+          <h2 className="text-3xl font-bold mb-4 ">Fitur Utama AlurKerja</h2>
+          
+        </div>
+      </section>
       <section
         className="features-section flex items-center text-center justify-center my-5"
         style={{
@@ -154,9 +169,11 @@ function Landing() {
           </Link>
         </div>
       </section>
+      {/* Menambahkan Footer */}
       <Footer />
     </>
   );
 }
 
+// Ekspor komponen Landing untuk digunakan di file lain
 export default Landing;

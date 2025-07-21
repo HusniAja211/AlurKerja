@@ -1,12 +1,14 @@
-import { useState } from "react";
+// mengimpor komponen yang diperlukan
 import logoWeb from "./../assets/Logo.png";
 import "../output.css";
 import "../index.css";
 import { Link } from "react-router-dom";
 
+// Komponen Navbar
 function Navbar() {
   return (
     <>
+      {/* Bagian navbar */}
       <div className="navbar-container flex w-screen h-16 text-white bg-white items-center justify-between px-4 top-0 fixed">
         <div className="navbar-brand flex items-center space-x-2">
           <a href="https://vite.dev" target="_blank">
@@ -57,4 +59,5 @@ function Navbar() {
   );
 }
 
+// Ekspor komponen Navbar untuk digunakan di file lain
 export default Navbar;

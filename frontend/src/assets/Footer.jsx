@@ -1,8 +1,11 @@
+// mengimporkomponen yang diperlukan
 import logoWeb from "./../assets/Logo-black.png";
 import "../output.css";
 
+// Komponen Footer
 function Footer() {
   return (
+    // Bagian footer
     <footer className="w-full flex flex-col bg-gradient-to-b from-blue-600 to-blue-800 text-white">
       <img src={logoWeb} alt="Logo" className="w-44 ml-10 pt-5" />
 
@@ -53,4 +56,5 @@ function Footer() {
   );
 }
 
+// Ekspor komponen Footer untuk digunakan di file lain
 export default Footer;
