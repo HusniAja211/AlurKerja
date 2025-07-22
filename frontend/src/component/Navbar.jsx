@@ -1,8 +1,8 @@
 // mengimpor komponen yang diperlukan
 import logoWeb from "./../assets/Logo.png";
-import "../output.css";
-import "../index.css";
 import { Link } from "react-router-dom";
+import "./../output.css";
+import "../index.css";
 
 // Komponen Navbar
 function Navbar() {
@@ -36,16 +36,22 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/register">
+              <Link
+                to="/register"
+                style={{
+                  hover: {
+                    backgroundColor: "#3164ff",
+                    color: "white",
+                  },
+                }}
+              >
                 <button
-                  className="text-white hover:text-blue-300 btn-daftar"
+                  className="hover:text-blue-300 btn-daftar rounded-2xl border bg-white"
                   style={{
-                    backgroundColor: "#f0f0f0",
                     color: "#3164ff",
                     border: "1px solid #3164ff",
                     padding: "0.50rem 1.5rem",
                     borderRadius: "2rem",
-                    transition: "opacity 0.3s ease",
                   }}
                 >
                   Daftar

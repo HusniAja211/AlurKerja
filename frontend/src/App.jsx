@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import {Register, VerifyEmail, BuatKataSandi } from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
 
 // Komponen utama aplikasi
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/verify-email" element={<VerifyEmail />} />
       <Route path="/forgot-password" element={<BuatKataSandi />} />
+      <Route path="/dashboard" element={<Dashboard/>}/>
       <Route path="*" element={<h1>Page Not Found</h1>} />
     </Routes>
   );

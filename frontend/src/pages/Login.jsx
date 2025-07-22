@@ -110,20 +110,23 @@ function Login() {
                 </Link>
               </div>
               <div className="flex justify-center flex-col items-center">
-                <button
-                  className="text-white hover:text-blue-300 btn-masuk text-center"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(90deg, #3164ff 0%, #1d3c99 100%)",
-                    color: "white",
-                    padding: "0.50rem 2rem",
-                    borderRadius: "2rem",
-                    fontWeight: 600,
-                    transition: "opacity 0.3s ease",
-                  }}
-                >
-                  Masuk
-                </button>
+                <Link to="/dashboard">
+                  <button
+                    className="text-white hover:text-blue-300 btn-masuk text-center"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(90deg, #3164ff 0%, #1d3c99 100%)",
+                      color: "white",
+                      padding: "0.50rem 2rem",
+                      borderRadius: "2rem",
+                      fontWeight: 600,
+                      transition: "opacity 0.3s ease",
+                    }}
+                  >
+                    Masuk
+                  </button>
+                </Link>
+                
                 <p className="text-center mt-2">
                   Belum punya akun?{" "}
                   <Link to="/register" className="text-blue-900">
