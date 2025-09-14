@@ -9,14 +9,12 @@ function Footer() {
     <footer className="w-full flex flex-col bg-gradient-to-b from-blue-600 to-blue-800 text-white">
       <img src={logoWeb} alt="Logo" className="w-44 ml-10 pt-5" />
 
-      {/* Garis pemisah tipis */}
-      <hr className="my-4 border-t border-white/50 w-full" />
-
-      <div className="ml-10 mb-4">
-        <h3 className="text-2xl font-bold mb-2">Tim Kami</h3>
-        <ul className="space-y-1">
+      <div className="ml-10 my-7">
+        <h3 className="text-2xl font-bold mb-4">Tim Kami</h3>
+        <ul className="space-y-5">
           <li>
             <a
+              className="hover:text-orange-300"
               href="https://www.instagram.com/yolawardani_/"
               target="_blank"
               rel="noopener noreferrer"
@@ -26,6 +24,7 @@ function Footer() {
           </li>
           <li>
             <a
+              className="hover:text-orange-300"
               href="https://www.instagram.com/satriafarel30/"
               target="_blank"
               rel="noopener noreferrer"
@@ -35,6 +34,7 @@ function Footer() {
           </li>
           <li>
             <a
+              className="hover:text-orange-300"
               href="https://www.instagram.com/husniaja211/"
               target="_blank"
               rel="noopener noreferrer"
@@ -49,7 +49,7 @@ function Footer() {
       <hr className="border-t border-white/50 w-full" />
 
       {/* Hak cipta di tengah */}
-      <p className="text-center py-4">
+      <p className=" text-sm text-center py-4">
         Hak Cipta © 2025 AlurKerja. Semua Hak Dilindungi.
       </p>
     </footer>
